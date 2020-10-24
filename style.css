@@ -1,4 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap');
+
+body {
+    background-color: #F2EFEA;
+}
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.post {
+    padding: 2em;
+    background-color: white;
+    margin: 2em;
+    border-radius: 0.5em;
+}
+
+h1 {
+    font-size: 1.5vw;
+    display: block;
+    margin-left: 1%;
+    margin-right: 77%;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5vw;
+    padding: 2vw;
+    color: white;
+    background: black;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    color: #666666;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #666666;
+    margin-bottom: -1vw;
+    font-weight: 800;
+}
+p {
+    font-family: 'Lora', serif;
+    text-transform: italic;
+}
+
+img {
+    max-height: 15vw;
+}
+
+#sub-header {
+ margin-left: 1%;
+text-transform: uppercase;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    padding: 0.3em;
+    text-transform:uppercase;
+    color: #73423D;
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    background-color: white;
+    border: 0.15em solid #73423D;
+    border-radius: 0.2em;
+}
+
+.type {
+    text-decoration: underline;
 }

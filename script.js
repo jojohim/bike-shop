@@ -13,8 +13,11 @@ function showPost(post) {
 
     const copy = template.cloneNode(true);
 
-    copy.querySelector("h2").textContent = post.title.rendered;
-    copy.querySelector(".body").innerHTML = post.content.rendered
+    copy.querySelector(".brand").textContent = post.brand;
+    copy.querySelector(".type").textContent = post.title.rendered;
+    copy.querySelector(".price").innerHTML = post.price;
+    copy.querySelector(".colours").innerHTML = post.colour;
+    copy.querySelector(".in_stock").innerHTML = post.in_stock;
 
-    document.querySelector("main").appendChild(copy);
+    document.querySelector("main").appendChild(copy)
 }
