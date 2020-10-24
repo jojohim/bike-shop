@@ -19,15 +19,18 @@ main {
     border-radius: 0.5em;
 }
 
+#title-wrapper {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(15em, 25em));
+}
+
 h1 {
-    font-size: 1.5vw;
-    display: block;
+    font-size: 1.5em;
     margin-left: 1%;
-    margin-right: 77%;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.5vw;
-    padding: 2vw;
+    padding: 1em;
     color: white;
     background: black;
 }
@@ -60,7 +63,7 @@ text-transform: uppercase;
 
 button {
     font-family: 'Roboto', sans-serif;
-    margin: 1em 20% 1em 20%;
+    margin: 1em 30% 1em 30%;
     padding: 0.3em;
     text-transform:uppercase;
     color: #73423D;
@@ -70,6 +73,14 @@ button {
     background-color: white;
     border: 0.15em solid #73423D;
     border-radius: 0.2em;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #73423D;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 
