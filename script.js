@@ -15,9 +15,9 @@ function showPost(post) {
 
     copy.querySelector(".brand").textContent = post.brand;
     copy.querySelector(".type").textContent = post.title.rendered;
-    copy.querySelector(".price").innerHTML = post.price;
-    copy.querySelector(".colours").innerHTML = post.colour;
-    copy.querySelector(".in_stock").innerHTML = post.in_stock;
+    copy.querySelector(".price").innerHTML = "Price -    " + post.price;
+    copy.querySelector(".colours").innerHTML = "Colours -    " + post.colour;
+    copy.querySelector(".in_stock").innerHTML = "In Stock -    " + post.in_stock;
 
     document.querySelector("main").appendChild(copy)
 }

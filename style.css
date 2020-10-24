@@ -5,10 +5,14 @@ body {
 }
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 1vw;
+
 }
 
 .post {
+    display: flex;
+    flex-direction: column;
     padding: 2em;
     background-color: white;
     margin: 2em;
@@ -41,11 +45,12 @@ h3 {
 }
 p {
     font-family: 'Lora', serif;
-    text-transform: italic;
 }
 
 img {
-    max-height: 15vw;
+    max-width: 100%;
+    height: auto;
+
 }
 
 #sub-header {
@@ -55,6 +60,7 @@ text-transform: uppercase;
 
 button {
     font-family: 'Roboto', sans-serif;
+    margin: 1em 20% 1em 20%;
     padding: 0.3em;
     text-transform:uppercase;
     color: #73423D;
@@ -66,6 +72,9 @@ button {
     border-radius: 0.2em;
 }
 
-.type {
-    text-decoration: underline;
+
+.line {
+    background-color:#666666;
+    height: 0.1px;
+    margin-top: -1vw;
 }
