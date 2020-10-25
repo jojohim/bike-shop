@@ -4,11 +4,14 @@ fetch("http://himstedtdesign.com/bike-shop/wp-json/wp/v2/posts")
 
 function handleData(posts) {
 console.log(posts)
-    posts.forEach(showPost)
+    posts.reverse();
+    posts.forEach(showPost);
 }
+
 
 function showPost(post) {
     console.log(post)
+
     const template = document.querySelector("template").content;
 
     const copy = template.cloneNode(true);
@@ -17,7 +20,9 @@ function showPost(post) {
     copy.querySelector(".type").textContent = post.title.rendered;
     copy.querySelector(".price").innerHTML = "Price -    " + post.price;
     copy.querySelector(".colours").innerHTML = "Colours -    " + post.colour;
-    copy.querySelector(".in_stock").innerHTML = "In Stock -    " + post.in_stock;
+    copy.querySelector(".in_stock").innerHTML = "In Stock -    " + post.in_sto
+    const img = copy.querySelector(".image");
+    img.setAttribute("src", `${post.image.guid}`)
 
     document.querySelector("main").appendChild(copy)
 }

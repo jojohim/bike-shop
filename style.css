@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap');
 
+/*<img src="warhawk_bike.jpg" class="image">*/
+
 body {
     background-color: #F2EFEA;
 }
@@ -51,8 +53,9 @@ p {
 }
 
 img {
+    width: 51rem;
     max-width: 100%;
-    height: auto;
+    margin-top: auto;
 
 }
 
@@ -63,7 +66,7 @@ text-transform: uppercase;
 
 button {
     font-family: 'Roboto', sans-serif;
-    margin: 1em 30% 1em 30%;
+    margin: 2em 31% 1em 31%;
     padding: 0.3em;
     text-transform:uppercase;
     color: #73423D;
@@ -84,8 +87,30 @@ button:hover {
 }
 
 
-.line {
+.type-line {
     background-color:#666666;
     height: 0.1px;
-    margin-top: -1vw;
+    margin-top: -1em;
+}
+
+.line {
+    background-color: lightgrey;
+    height: 0.1px;
+}
+
+
+.h2-wrapper {
+    display: flex;
+}
+
+#h2-red {
+    color: #73423D;
+}
+
+.att-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    margin-top: 1em;
+    padding: 1em;
 }
