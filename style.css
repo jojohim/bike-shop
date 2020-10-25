@@ -12,20 +12,8 @@ main {
 
 }
 
-.post {
-    display: flex;
-    flex-direction: column;
-    padding: 2em;
-    background-color: white;
-    margin: 2em;
-    border-radius: 0.5em;
-}
 
-#title-wrapper {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(15em, 25em));
-}
-
+/*FONTS*/
 h1 {
     font-size: 1.5em;
     margin-left: 1%;
@@ -52,6 +40,7 @@ p {
     font-family: 'Lora', serif;
 }
 
+/*IMAGES*/
 img {
     width: 51rem;
     max-width: 100%;
@@ -59,9 +48,54 @@ img {
 
 }
 
+/*HEADER*/
+#title-wrapper {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(15em, 25em));
+}
+
 #sub-header {
  margin-left: 1%;
 text-transform: uppercase;
+}
+
+.h2-wrapper {
+    display: flex;
+}
+
+#h2-red {
+    color: #73423D;
+}
+
+/*PRODUCT BOX*/
+.post {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background-color: white;
+    margin: 2em;
+    border-radius: 0.5em;
+}
+
+/*ATTRIBUTE BOX*/
+.att-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #F2EFEA;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+
+.type-line {
+    background-color:#666666;
+    height: 0.1px;
+    margin-top: -1em;
+}
+
+.line {
+    background-color: #F2EFEA;
+    height: 0.1px;
 }
 
 button {
@@ -87,30 +121,3 @@ button:hover {
 }
 
 
-.type-line {
-    background-color:#666666;
-    height: 0.1px;
-    margin-top: -1em;
-}
-
-.line {
-    background-color: lightgrey;
-    height: 0.1px;
-}
-
-
-.h2-wrapper {
-    display: flex;
-}
-
-#h2-red {
-    color: #73423D;
-}
-
-.att-box {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid lightgrey;
-    margin-top: 1em;
-    padding: 1em;
-}
